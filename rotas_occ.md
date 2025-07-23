@@ -1671,7 +1671,7 @@
 
 ---
 
-### 6. Status Pedido (LEGACY)
+### 6. Status Pedido (LEGACY) - rota não encontrada no BFF
 
 - **URL interna:**  
   `GET /api/nagem/order/legacy/status/:orderId`
