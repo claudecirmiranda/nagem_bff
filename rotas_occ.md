@@ -669,7 +669,7 @@
 
 ---
 
-## GET BANNERS LIST
+## GET BANNERS LIST - não tem rota no BFF
 
 **Descrição:** Monta uma lista de banners a partir de uma coleção.
 - **Usado por:** homeService.getCarouselBanners, homeService.getDynamicMiniBanner, etc.
