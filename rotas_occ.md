@@ -1560,7 +1560,7 @@
 
 ---
 
-### 3. Aplicar Cupom
+### 3. Aplicar Cupom - rota não encontrada no BFF
 
 - **URL interna:**  
   `PATCH /api/nagem/order/current/coupon`
