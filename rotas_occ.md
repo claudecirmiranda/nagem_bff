@@ -1587,7 +1587,7 @@
 
 ---
 
-### 4. Listar Pedidos (OCC)
+### 4. Listar Pedidos (OCC) - rota não encontrada no BFF
 
 - **URL interna:**  
   `GET /api/nagem/order/list`
