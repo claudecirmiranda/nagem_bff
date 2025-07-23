@@ -1653,7 +1653,7 @@
 
 ---
 
-### 5. Listar Pedidos (LEGACY)
+### 5. Listar Pedidos (LEGACY) - rota não encontrada no BFF
 
 - **URL interna:**  
   `GET api/nagem/order_legacy/:userId`
@@ -1689,7 +1689,7 @@
 
 ---
 
-### 7. Adicionar Item ao Pedido Atual
+### 7. Adicionar Item ao Pedido Atual - rota não encontrada no BFF
 
 - **URL interna:**  
   `POST /api/nagem/order/current/itens/add`
@@ -1820,7 +1820,7 @@
 
 ---
 
-### 8. Atualizar Item do Pedido Atual
+### 8. Atualizar Item do Pedido Atual - rota não encontrada no BFF
 
 - **URL interna:**  
   `PATCH /api/nagem/order/current/itens/update/:itemId`
@@ -1913,7 +1913,7 @@
 
 --- -->
 
-### 12. Adicionar Endereço ao Grupo de Entrega
+### 12. Adicionar Endereço ao Grupo de Entrega - rota não encontrada no BFF
 
 - **URL interna:**  
   `PATCH /api/nagem/order/current/shipping_groups/:shippingId`
@@ -2217,7 +2217,7 @@
 
 ---
 
-### 19. Cancelar Pedido
+### 19. Cancelar Pedido - rota não encontrada no BFF
 
 - **URL interna:**  
   `POST /api/nagem/order/cancel`
@@ -2264,7 +2264,7 @@
 
 ---
 
-### 21. Repetir Pedido (LEGACY)
+### 21. Repetir Pedido (LEGACY) - rota não encontrada no BFF
 
 - **URL interna:**  
   `PATCH /api/nagem/order/current/items`
@@ -2284,7 +2284,7 @@
 
 ---
 
-### 22. Confirmar Itens do Carrinho
+### 22. Confirmar Itens do Carrinho - rota não encontrada no BFF
 
 - **URL interna:**  
   `PATCH /api/nagem/order/current/items/confirm`
@@ -2746,7 +2746,7 @@
 
 ---
 
-### 25. Métodos de Pagamento (Modal - PROD)
+### 25. Métodos de Pagamento (Modal - PROD) - rota não encontrada no BFF
 
 - Serviço nagem
 - **URL interna:**  
@@ -2777,7 +2777,7 @@
 
 ---
 
-### 27. Obter ShippingId (obter ID do Grupo de Entrega)
+### 27. Obter ShippingId (obter ID do Grupo de Entrega) - rota não encontrada no BFF
 
 - **URL interna:**  
   `GET /api/nagem/order/current/shippingId`
@@ -2805,7 +2805,7 @@
 
 ---
 
-### 28. Alterar Data de Criação do Pedido
+### 28. Alterar Data de Criação do Pedido - rota não encontrada no BFF
 
 - **URL interna:**  
   `PUT /api/nagem/order/:orderId/creationTime`
@@ -2833,7 +2833,7 @@
 
 ---
 
-### 29. Obter Número Pedido ECM
+### 29. Obter Número Pedido ECM - rota não encontrada no BFF
 
 - **Serviço nagem**
 - **URL interna:**  
@@ -3722,7 +3722,7 @@
 
 --- -->
 
-## 20. Buscar Todos os Produtos (IDs)
+## 20. Buscar Todos os Produtos (IDs) - sem rota no BFF
 
 **Função:** `getAllProducts`  
 **Arquivo:** productsController.js  
@@ -3815,7 +3815,7 @@
 
 ## Auxiliares
 
-## 24. getSKU
+## 24. getSKU - sem rota no BFF
 
 **Função:** `getSKU`  
 **Arquivo:** productsService.js  
@@ -3848,7 +3848,7 @@
 
 ---
 
-## 25. getProductsHome
+## 25. getProductsHome - sem rota no BFF
 
 
 **Função:** `getProductsHome`  
@@ -3895,7 +3895,7 @@
 
 ---
 
-## 26. getCollection
+## 26. getCollection - sem rota no BFF - sem rota no BFF
 
 **Função:** `getCollection`  
 **Arquivo:** productsService.js  
@@ -3964,7 +3964,7 @@
 
 --- -->
 
-## 28. getProducts
+## 28. getProducts - sem rota no BFF
 
 **Função:** `getProducts`  
 **Arquivo:** productsService.js  
@@ -4027,7 +4027,7 @@
 
 --- -->
 
-## 32. getProductsWithStock
+## 32. getProductsWithStock - sem rota no BFF
 
 **Função:** `getProductsWithStock`  
 **Arquivo:** productsService.js  
@@ -4058,7 +4058,7 @@
 ```
 ---
 
-## 34. getAutoSuggestion
+## 34. getAutoSuggestion - sem rota no BFF
 
 **Função:** `getAutoSuggestion`  
 **Arquivo:** productsService.js  
@@ -4109,7 +4109,7 @@
 
 ## YOURVIEW
 
-## getProductReviews
+## getProductReviews - sem rota no BFF
 
 **Função:** `getProductReviews`  
 **Arquivo:** yourviewService.js 
