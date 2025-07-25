@@ -12,9 +12,9 @@ TABELA DE ROTAS EXTRAÍDAS
 |getLightningOffer          | /api/nagem/home/lightning_offer                            | GET   |
 |getHomeBannerCorpo         | /api/nagem/home/banner_corpo                               | GET   |
 |getHomeCategories          | /api/nagem/home/categories                                 | GET   |
-|getHomeItems               | /home/items                                                | GET   |
+|getHomeItems*              | /home/items                                                | GET   |
 |getAllHomeContent          | /api/nagem/home/home_content                               | GET   |
-|getHomePromoShowcase       | /home/promo-showcase                                       | GET   |
+|getHomePromoShowcase*      | /home/promo-showcase                                       | GET   |
 |getHomeShowCases           | /api/nagem/home/showcases/:showcaseId                      | GET   |
 |getHomeFilipetas           | /home                                                      | GET   |
 |getHomeMeetNagemBanners    | /api/nagem/home/banners_meet_nagem                         | GET   |
