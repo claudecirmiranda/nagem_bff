@@ -11,36 +11,36 @@
 |1| **/api/nagem/collections** | get | listCollections | getCollections |
 
 **favoritesProducts.js**
-|ID|Rota|Método|Controller|Função|OCC|
-|--|----|-------|----------|--------|--------|
+|ID|Rota|Método|Controller|Função|OCC|APP|
+|--|----|-------|----------|--------|--------|--------|
 |1| **/api/nagem/favorite_products/create_list_products** | post | favoriteProductController | createPurchaseList |1|
 |2| **/api/nagem/favorite_products/list_products_lists** | get | favoriteProductController | listPurchaseLists |2|
 |3| **/api/nagem/favorite_products/get_list_products/:id** | get | favoriteProductController | getPurchaseList |3|
 |4| **/api/nagem/favorite_products/update_items/:id** | post | favoriteProductController | updateItems |4|
 
 **home.js**
-|ID|Rota|Método|Controller|Função|OCC|
-|--|----|-------|----------|--------|--------|
+|ID|Rota|Método|Controller|Função|OCC|APP|
+|--|----|-------|----------|--------|--------|--------|
 |1| /api/nagem/home | get | homeController | get |
 |2| **/api/nagem/home/refresh** | get | homeController | refreshHome |5|
-|3| **/api/nagem/home/home_content** | get | homeController | getHomeContent |6|
-|4| **/api/nagem/home/banners** | get | homeController | getBanners |7|
+|3| **/api/nagem/home/home_content** | get | homeController | getHomeContent |6|Y|
+|4| **/api/nagem/home/banners** | get | homeController | getBanners |7|Y|
 |5| **/api/nagem/home/carousel_banners** | get | homeController | getCarouselBanners |8|
-|6| **/api/nagem/home/lightning_offer** | get | homeController | getLightningOffer |9|
-|7| /api/nagem/home/banner_corpo | get | homeController | getBannerCorpo |
-|8| **/api/nagem/home/banner_brand** | get | homeController | getBannerBrand |10|
-|9| **/api/nagem/home/getAppHome** | get | homeController | getAppHome |11|
+|6| **/api/nagem/home/lightning_offer** | get | homeController | getLightningOffer |9|Y|
+|7| /api/nagem/home/banner_corpo | get | homeController | getBannerCorpo |Y|
+|8| **/api/nagem/home/banner_brand** | get | homeController | getBannerBrand |10|Y|
+|9| **/api/nagem/home/getAppHome** | get | homeController | getAppHome |11|Y|
 |10| **/api/nagem/home/get_popup_home** | get | homeController | getPopupHome |12|
-|11| **/api/nagem/home/getHomeSpecialShowcases** | get | homeController | getHomeSpecialShowcases |13|
-|12| **/api/nagem/home/categories** | get | homeController | getCategories |14|
+|11| **/api/nagem/home/getHomeSpecialShowcases** | get | homeController | getHomeSpecialShowcases |13|Y|
+|12| **/api/nagem/home/categories** | get | homeController | getCategories |14|Y|
 |13| **/api/nagem/home/night_offer** | get | homeController | getNightOffer |15|
-|14| **/api/nagem/home/mini_banner** | get | homeController | getMiniBanner |16|
+|14| **/api/nagem/home/mini_banner** | get | homeController | getMiniBanner |16|Y|
 |15| **/api/nagem/home/dynamic_mini_banner** | get | homeController | getDynamicMiniBanner |17|
-|16| **/api/nagem/home/card_banner** | get | homeController | getNagemCardBanner |18|
+|16| **/api/nagem/home/card_banner** | get | homeController | getNagemCardBanner |18|Y|
 |17| **/api/nagem/home/home_top_link** | get | homeController | getHomeTopLink |19|
-|18| **/api/nagem/home/showcases/:showcaseId** | get | homeController | getVitrine |20|
+|18| **/api/nagem/home/showcases/:showcaseId** | get | homeController | getVitrine |20|Y|
 |19| **/api/nagem/home/banners_meet_nagem** | get | homeController | getBannersMeetNagem |21|
-|20| /api/nagem/home/stores_enabled | get | homeController | getStoresEnabled |
+|20| **/api/nagem/home/stores_enabled** | get | homeController | getStoresEnabled |-|Y|
 
 **index.js**
 |ID|Rota|Método|Controller|Função|
@@ -50,18 +50,18 @@
 |3| /healthcheck | get | res | end |
 
 **landingPage.js**
-|ID|Rota|Método|Controller|Função|OCC|
-|--|----|-------|----------|--------|--------|
+|ID|Rota|Método|Controller|Função|OCC|APP|
+|--|----|-------|----------|--------|--------|--------|
 |1| **/api/nagem/landing-page/:n/:ntt/:ns** | get | landingPageController | getId |22|
 
 **login.js**
-|ID|Rota|Método|Controller|Função|OCC|
-|--|----|-------|----------|--------|--------|
+|ID|Rota|Método|Controller|Função|OCC|APP|
+|--|----|-------|----------|--------|--------|--------|
 |1| **/api/nagem/login** | post | login | getLogin |23|
 
 **order.js**
-|ID|Rota|Método|Controller|Função|OCC|
-|--|----|-------|----------|--------|--------|
+|ID|Rota|Método|Controller|Função|OCC|APP|
+|--|----|-------|----------|--------|--------|--------|
 |1| **/api/nagem/order/create** | post | orderController | createOrder |24|
 |2| **/api/nagem/order/current** | get | orderController | getCurrentOrder |25|
 |3| /api/nagem/order/current/shipping_groups/relatetoitems | post | orderController | relatedToItensCurrentOrder |
@@ -98,8 +98,8 @@
 |1| /api/nagem/payment/pix | post | paymentController | pixPayment |
 
 **products.js**
-|ID|Rota|Método|Controller|Função|OCC|
-|--|----|-------|----------|--------|--------|
+|ID|Rota|Método|Controller|Função|OCC|APP|
+|--|----|-------|----------|--------|--------|--------|
 |1| **/api/nagem/search_products** | get | productsService | search |
 |2| **/api/nagem/auto_suggestion** | get | productsService | autoSuggestion |41|
 |3| **/api/nagem/product/:productId** | get | productsService | getProduct |42|
@@ -133,8 +133,8 @@
 |4| /api/nagem/shipping_stores | get | shippingController | shippingStores |
 
 **sitesettings.js**
-|ID|Rota|Método|Controller|Função|OCC|
-|--|----|-------|----------|--------|--------|
+|ID|Rota|Método|Controller|Função|OCC|APP|
+|--|----|-------|----------|--------|--------|--------|
 |1| **/api/nagem/site** | get | listSiteSettings | getSiteSettings |56|
 
 **user.js**
