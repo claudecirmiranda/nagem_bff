@@ -189,3 +189,112 @@ flowchart TD
 
 ---
 
+## Complementos Recomendados
+
+🔐 1. Segurança e Controle de Acesso
+------------------------------------
+
+*   Autenticação via OAuth2 ou JWT para acesso ao CMS.
+    
+*   Controle de permissões (RBAC): ex: Admin, Conteudista, Visualizador.
+    
+*   Limitação de IP ou VPN para CMS (opcional).
+    
+*   Validação de payloads com schemas (ex: JSON Schema, OpenAPI).
+    
+
+* * *
+
+🚀 2. Performance e Escalabilidade
+----------------------------------
+
+*   Uso de CDN para imagens e conteúdo estático reduz a latência.
+    
+*   Cache Redis para conteúdo publicado evita consultas frequentes ao banco.
+    
+*   Possibilidade de "pre-rendering" da Home e salvar no Redis como blob JSON.
+    
+*   Escalabilidade horizontal do CMS e da API pública (via Kubernetes, AppEngine, ECS).
+    
+
+* * *
+
+🛠️ 3. DevOps e Deploy
+----------------------
+
+*   CI/CD com GitHub Actions, GitLab CI ou Cloud Build.
+    
+*   Ambientes separados: `dev`, `homolog`, `prod` com versionamento de conteúdo.
+    
+*   Deploy automatizado de CMS e APIs com rollback fácil.
+    
+*   Monitoramento de tempo de resposta das APIs (APM, Datadog, Prometheus).
+    
+
+* * *
+
+🧪 4. Testes e Qualidade
+------------------------
+
+*   Testes unitários para API de conteúdo.
+    
+*   Testes de integração para publicação e leitura da Home.
+    
+*   Testes de carga com k6 ou Artillery para validar performance sob stress.
+    
+*   Validação de imagens e links expirados automaticamente (cron).
+    
+
+* * *
+
+🧾 5. Governança e Versionamento
+--------------------------------
+
+*   Cada publicação gera um snapshot (hash/version-id).
+    
+*   Possibilidade de comparar versões publicadas vs. em edição.
+    
+*   Logs de quem publicou, quando e o quê.
+    
+*   API `GET /home?version=123` para debugging ou rollback.
+    
+
+* * *
+
+🌎 6. Multicanal e Evolução
+---------------------------
+
+*   Estrutura pensada para suportar também o **site web** futuramente.
+    
+*   Dados estruturados para suporte a personalização ou A/B testing.
+    
+*   API pode evoluir para GraphQL se necessário, com resolvers sob demanda.
+
+📂 7. Organização de Código (Recomendação)
+------------------------------------------
+
+📁 content-api/
+│   ├── controllers/
+│   ├── services/
+│   ├── models/
+│   ├── routes/
+│   ├── middlewares/
+│   └── index.js
+📁 cms-frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   └── public/ (upload direto ou via backend)
+
+* * *
+
+📊 8. Métricas Recomendadas
+---------------------------
+
+| Métrica | Como medir / ferramenta |
+| --- | --- |
+| Tempo médio de resposta da API | APM / Logs |
+| Taxa de acerto do cache Redis | Prometheus ou Redis Insights |
+| Taxa de erro de publicação | Logs de erro no backend |
+| Conteúdos mais clicados | Google Analytics / Pixel de rastreamento |
+| Histórico de versões ativas | Banco de dados (tabela de versionamento) |
