@@ -273,6 +273,7 @@ flowchart TD
 📂 7. Organização de Código (Recomendação)
 ------------------------------------------
 
+```
 📁 content-api/
 │   ├── controllers/
 │   ├── services/
@@ -285,6 +286,7 @@ flowchart TD
 │   ├── pages/
 │   ├── services/
 │   └── public/ (upload direto ou via backend)
+```
 
 * * *
 
