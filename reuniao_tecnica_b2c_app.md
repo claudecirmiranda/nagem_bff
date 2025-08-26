@@ -59,5 +59,5 @@ Investigar a viabilidade de reutilizar funcionalidades do B2C Web no APP, evitan
 
 ### 📂 Anexos e Referências
 - Diagrama de arquitetura proposto
-- Lista de métodos da Home do APP
+- [Lista de métodos da Home do APP](app_metodos_home.md)
 - Código-fonte ou trechos relevantes do B2C
