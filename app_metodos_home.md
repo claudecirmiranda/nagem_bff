@@ -1,4 +1,5 @@
 ### Funcionalidades da Home (segundo levantamento atual)
+[voltar](reuniao_tecnica_b2c_app.md)
 
 | Método                | Parâmetros   | Descrição                                                                 |
 |-----------------------|--------------|---------------------------------------------------------------------------|
